@@ -30,7 +30,6 @@ namespace Przedszkolanka_522
                 }
                 Console.WriteLine(result);
             }
-
         }
     }
 }
