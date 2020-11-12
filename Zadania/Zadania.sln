@@ -7,9 +7,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LiczbyPierwsze_438", "Liczb
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Flamaster_506", "Flamaster_506\Flamaster_506.csproj", "{18F92D07-FBF9-42C0-8EA2-8B555AA0C236}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DwieCyfrySilni_496", "DwieCyfrySilni_496\DwieCyfrySilni_496.csproj", "{087D188C-572C-4AC4-8319-8C9E71CE3990}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DwieCyfrySilni_496", "DwieCyfrySilni_496\DwieCyfrySilni_496.csproj", "{087D188C-572C-4AC4-8319-8C9E71CE3990}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CzyUmieszPotegowac_499", "CzyUmieszPotegowac\CzyUmieszPotegowac_499.csproj", "{81615245-52BE-4574-882D-AB05EDD2CE78}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CzyUmieszPotegowac_499", "CzyUmieszPotegowac\CzyUmieszPotegowac_499.csproj", "{81615245-52BE-4574-882D-AB05EDD2CE78}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZabawneDodawaniePiotrusia_568", "ZabawneDodawaniePiotrusia_568\ZabawneDodawaniePiotrusia_568.csproj", "{DF2EEE7D-AC71-498F-8629-0A6B642346CF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{81615245-52BE-4574-882D-AB05EDD2CE78}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{81615245-52BE-4574-882D-AB05EDD2CE78}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{81615245-52BE-4574-882D-AB05EDD2CE78}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF2EEE7D-AC71-498F-8629-0A6B642346CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF2EEE7D-AC71-498F-8629-0A6B642346CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF2EEE7D-AC71-498F-8629-0A6B642346CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF2EEE7D-AC71-498F-8629-0A6B642346CF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
