@@ -8,10 +8,10 @@ namespace LENLCS_498
         {
             if (n < 0 || m < 0) return 0;
 
-            if (s1[n] != s2[m])
-                return Math.Max(LENLCS(s1, s2, n, m - 1), LENLCS(s1, s2, n - 1, m));
-            else
+            if (s1[n] == s2[m])
                 return 1 + LENLCS(s1, s2, n - 1, m - 1);
+            else
+                return Math.Max(LENLCS(s1, s2, n, m - 1), LENLCS(s1, s2, n - 1, m));
         }
         static void Main(string[] args)
         {
