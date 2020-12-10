@@ -15,6 +15,11 @@ namespace Copies
                 this.opis = new OpisSamochodu(marka, model);
             }
 
+            public void Wypisz()
+            {
+                Console.WriteLine(this.opis.marka + " " + this.opis.model + " " + this.rokProdukcji);
+            }
+
             public object ShallowCopy()
             {
                 return this.MemberwiseClone();
@@ -22,13 +27,10 @@ namespace Copies
 
             public Samochod DeepCopy()
             {
-                return new Samochod(this.rokProdukcji, this.opis.marka, this.opis.model);
+                Samochod result = new Samochod(this.rokProdukcji, this.opis.marka, this.opis.model);
+                return result;
             }
 
-            public void Wypisz()
-            {
-                Console.WriteLine(this.opis.marka + " " + this.opis.model + " " + this.rokProdukcji);
-            }
         }
 
         class OpisSamochodu 
@@ -44,22 +46,32 @@ namespace Copies
         }
         static void Main(string[] args)
         {
-            Samochod s1 = new Samochod(2012, "Ford", "Focus");
+            Samochod s1 = new Samochod(2012, "Ford", "focus");
             Samochod s2 = s1.DeepCopy();
 
-            s1.Wypisz();
-            s2.Wypisz();
-
-            s1.rokProdukcji = 2020;
 
             s1.Wypisz();
             s2.Wypisz();
 
-            s1.opis.marka = "Opel";
-            s1.opis.model = "Astra";
+            s2.rokProdukcji = 2015;
+            s2.opis.marka = "Ferrari";
+            s2.opis.model = "Ferrari";
 
+            Console.WriteLine();
             s1.Wypisz();
             s2.Wypisz();
+
         }
     }
 }
+
+
+//public object ShallowCopy()
+//{
+//    return this.MemberwiseClone();
+//}
+
+//public Samochod DeepCopy()
+//{
+//    return new Samochod(this.rokProdukcji, this.opis.marka, this.opis.model);
+//}
