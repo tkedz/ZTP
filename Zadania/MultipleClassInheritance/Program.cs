@@ -12,7 +12,7 @@ namespace MultipleClassInheritance
         {
 
             public void dzialaj()
-            {
+            { 
                 Console.WriteLine("Rozpoczynam drukkowanie");
             }
         }
