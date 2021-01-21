@@ -14,7 +14,8 @@ namespace JGGHACK_1346
 
                 for(int j=0;j<input.Length;j+=2)
                 {
-                    int tmp = ((int)input[j] - 65) + ((int)input[j + 1] - 65) * 16;
+                    int tmp = ((int)input[j] - 65) +  ((int)input[j + 1] - 65) * 16;
+
                     passwd += (char)tmp;
                 }
 
