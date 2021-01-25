@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Kalkulator2_998
 {
@@ -10,6 +6,7 @@ namespace Kalkulator2_998
     {
         static void Main(string[] args)
         {
+            int[] numbers = new int[10];
             string input;
             while ((input = Console.ReadLine()) != null)
             {
@@ -20,19 +17,22 @@ namespace Kalkulator2_998
                 switch (arr[0])
                 {
                     case "+":
-                        Console.WriteLine(a + b);
+                        Console.WriteLine(numbers[a] + numbers[b]);
                         break;
                     case "-":
-                        Console.WriteLine(a - b);
+                        Console.WriteLine(numbers[a] - numbers[b]);
                         break;
                     case "*":
-                        Console.WriteLine(a * b);
+                        Console.WriteLine(numbers[a] * numbers[b]);
                         break;
                     case "/":
-                        Console.WriteLine(a / b);
+                        Console.WriteLine(numbers[a] / numbers[b]);
                         break;
                     case "%":
-                        Console.WriteLine(a % b);
+                        Console.WriteLine(numbers[a] % numbers[b]);
+                        break;
+                    default:
+                        numbers[a] = b;
                         break;
                 }
             }
