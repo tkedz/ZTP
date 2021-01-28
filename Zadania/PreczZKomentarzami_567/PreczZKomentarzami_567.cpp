@@ -1,16 +1,19 @@
 ﻿#include <iostream>
 #include <string>
 #include <sstream>
+#include <fstream>
 using namespace std;
 
 int main()
 {
-    string input;
+    istreambuf_iterator<char> eos;
+    string input(istreambuf_iterator<char>(cin), eos);
+    cin >> input;
+
     string output;
     bool singleLineComment = false;
     bool multilineComment = false;
 
-    cin >> input;
     int i = 0;
     while (i < input.size()) {
         
